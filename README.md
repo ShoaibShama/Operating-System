@@ -12,7 +12,7 @@ e-mail addresses to a list (contact scraping).
 
 
 
-WEB SCRAPER USING PYTHON
+## WEB SCRAPER USING PYTHON
 
 ![image](https://user-images.githubusercontent.com/98227015/171368104-c97e9395-a4be-40fb-a3a9-7257dc589bd7.png)
 
