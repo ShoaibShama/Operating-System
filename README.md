@@ -162,25 +162,10 @@ OUTPUT:
 
 Multithíeading with threading can give us a signiﬁcant boost heíe. We can take advantage of multithíeading by making a tiny change to ouí scíapeí
 
-![Uploading image.png…]()
 
+![image](https://user-images.githubusercontent.com/98227015/171369982-7d61514d-d712-4bb6-9e54-29ca103e2f3b.png)
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
+dfdf
 
 
 
@@ -195,15 +180,15 @@ Multithíeading with threading can give us a signiﬁcant boost heíe. We can ta
 Notice how little changed. Instead of looping through all the urls, we used multiple threads to execute the same program. Threading library is used to create multiple threads and hence, execute the function across many independent threads. The thread_count variable here is set to 8 and the number of images to 40. These threads operate asynchronously.
 
 THE OUTPUT:
+![image](https://user-images.githubusercontent.com/98227015/171370243-3cde8a1f-66ee-41a7-be0f-5816643c554d.png)
 
 
  
 We see in the output, that ranges are set for 5 images each (8 threads and 40 images), and the images are not being downloaded in a serial manner.
 
-
+![image](https://user-images.githubusercontent.com/98227015/171370284-a6c8c900-5485-4791-bf3a-a07476ea8ee7.png)
 
 That’s all there is to it. Let’s see how big of an impact this tiny change can make. It took about 12 seconds to download the images before.
-
 
 
 1.54 seconds for 40 images! That’s way faster. With so little in code changes, we got a roughly 8x speedup. At a larger scale, we’d likely see even more potential benefit from multithreading.
@@ -222,38 +207,33 @@ https://www.pokemon.com/us/pokedexWe have empty folders
 
 
 
+
 SIMPLE WEB SCRAPER (WITHOUT MULTITHREADING):
+![image](https://user-images.githubusercontent.com/98227015/171370625-f850074b-85c7-4346-bc04-2e79d3a1b337.png)
 
-
-
-
-
- 
- 
+![image](https://user-images.githubusercontent.com/98227015/171370684-fe600223-034a-4d5c-961e-069c212ec4cc.png)
 
 WEB SCRAPER WITH MULTITHREADING:
 
+![image](https://user-images.githubusercontent.com/98227015/171370712-f0016b90-bbe5-4ea2-a1cc-5b042c575657.png)
+
+ ![image](https://user-images.githubusercontent.com/98227015/171370735-1cbb8433-5000-4dd0-a304-8deddab7d836.png)
+ 
+ THE IMAGES ARE STORED IN OUR FOLDERS
+ 
+ ![image](https://user-images.githubusercontent.com/98227015/171370784-ee0d6f77-de9e-48eb-9500-5acddae43735.png)
 
  
- 
-
-
-
-
-
-
-
-
-THE IMAGES ARE STORED IN OUR FOLDERS
- 
-LINK FOR CODE:
-https://github.com/NaveenYadav08/Multi- threaded-Web-Scrapper.git
-ANALYSIS OF TIME TAKEN FOR DIFFERENT NO. OF THREADS:
+### ANALYSIS OF TIME TAKEN FOR DIFFERENT NO. OF THREADS:
+![image](https://user-images.githubusercontent.com/98227015/171370917-9436d6d4-8406-4cac-91b8-0a312b303412.png)
+![image](https://user-images.githubusercontent.com/98227015/171370948-c7b7fc9e-29c8-457a-a735-b2d45f9f7ffa.png)
 
 
 
  
 APPLICATIONS OF WEB SCRAPING:
+![image](https://user-images.githubusercontent.com/98227015/171370990-9325cafc-a6c4-4037-9fd0-4a8c249b8f28.png)
+
 
 This is to say that the top applications of web scraping keeps on increasing as the web continues to expand, most of the applications of web scraping at the moment falls one of these:
 ●	E-commerce
