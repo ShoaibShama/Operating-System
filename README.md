@@ -22,7 +22,7 @@ First, we need to get the URL from which the images are to be downloaded. Since 
 
 ![image](https://user-images.githubusercontent.com/98227015/171368144-0d6eb75d-93e6-497f-9847-16d3a257b961.png)
  
-LIBRARIES USED:
+### LIBRARIES USED:
 
 ![image](https://user-images.githubusercontent.com/98227015/171368199-5e1522ba-e362-4d38-8d58-3bbeafb61e53.png)
 
@@ -41,14 +41,14 @@ The time taken in this case was around 12 seconds. If the program is run for a r
 This program can be completed in a much shorter time if we introduce multithreading in our code.
 So, first let’s see what multithreading is.
  
-MULTITHREADING
+##                                                          MULTITHREADING
 In computer architecture, multithreading is the ability of a central processing unit (CPU) (or a single core in a multi-core processor) to provide multiple threads of execution concurrently, supported by the operating system. This approach differs from multiprocessing. In a multithreaded application, the threads share the resources of a single or multiple cores, which include the computing units, the CPU caches, and the translation lookaside buffer (TLB).
 Where multiprocessing systems include multiple complete processing units in one or more cores, multithreading aims to increase utilization of a single core by using thread-level parallelism, as well as instruction-level parallelism. As the two techniques are complementary, they are combined in nearly all modern systems architectures with multiple multithreading CPUs and with CPUs with multiple multithreading cores.
 The two main types of threads are user-level threads and kernel-level threads. A diagram that demonstrates these is as follows −
 
 ![image](https://user-images.githubusercontent.com/98227015/171368512-ea2f8d0f-ce5d-4283-9e3c-40a884e0c53b.png)
  
-User - Level Threads
+### User - Level Threads
 
 The user-level threads are implemented by users and the kernel is not aware of the existence of these threads. It handles them as if they were single-threaded processes. User-level threads are small and much faster than kernel level threads. They are represented by a program counter (PC), stack, registers and a small process control block. Also, there is no kernel involvement in synchronization for user-level threads.
 Advantages of User-Level Threads
@@ -64,7 +64,8 @@ Some of the disadvantages of user-level threads are as follows −
 
 ●	Multithreaded applications in user-level threads cannot use multiprocessing to their advantage.
 ●	The entire process is blocked if one user-level thread performs blocking operation.
-Kernel-Level Threads
+
+### Kernel-Level Threads
 
 Kernel-level threads are handled by the operating system directly and the thread management is done by the kernel. The context information for the process as well as the process threads is all managed by the kernel. Because of this, kernel-level threads are slower than user-level threads.
 
@@ -95,28 +96,28 @@ From the software standpoint, hardware support for multithreading is more visibl
 
 ![image](https://user-images.githubusercontent.com/98227015/171368590-d8ec30c4-1593-4c2d-856c-7d49c4922fd6.png)
 
-Multi-Threading Models in Process Management
+##                                          Multi-Threading Models in Process Management
 
 Many operating systems support kernel thread and user thread in a combined way. Example of such system is Solaris. Multi-threading model are of three types.
 1.	Many to many models.
 2.	Many to one model
 3.	one to one model.
 
--Many to Many Model
+### Many to Many Model
  
 In this model, we have multiple user threads multiplexed to the same or lesser number of kernel level threads. Number of kernel level threads are specific to the machine; the advantage of this model is if a user thread is blocked, we can schedule others user
 threads to another kernel thread. Thus, System doesn’t block if a particular thread is blocked.
 
 ![image](https://user-images.githubusercontent.com/98227015/171368677-4555c132-6730-4539-82df-265142d10322.png)
 
--Many to One Model
+### Many to One Model
 
 In this model, we have multiple user threads mapped to one kernel thread. In this model when a user thread makes a blocking system call entire process blocks. As we have only one kernel thread and only one user thread can access the kernel at a time, so multiple threads are not able access the multiprocessor at the same time.
  
  ![image](https://user-images.githubusercontent.com/98227015/171368718-7a24d464-c9ac-441a-8762-926b41ffd6ac.png)
 
 
--One to One Model
+### One to One Model
 
 In this model, one to one relationship between kernel and user thread. In this model multiple threads can run on multiple processors. Problem with this model is that creating a user thread requires the corresponding kernel thread.
 
@@ -152,18 +153,17 @@ As a result, the current program will first wait for the completion of t1 and th
 OUTPUT:
 ![image](https://user-images.githubusercontent.com/98227015/171369049-52958ad0-fc54-45f3-8855-51809b86533b.png)
  
-MULTITHREADED WEB SCRAPING
+##                                                     MULTITHREADED WEB SCRAPING
 
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/98227015/171369468-fd3b3010-365a-422f-b73e-26b823a8747d.png)
 
 
 ľhe I/O tasks can be executed concuííently acíoss multiple thíeads in the same píocess, and that these tasks can happen while otheí Python bytecode is being inteípíeted.
 
 Multithíeading with threading can give us a signiﬁcant boost heíe. We can take advantage of multithíeading by making a tiny change to ouí scíapeí
+
+![Uploading image.png…]()
+
 
 
 
