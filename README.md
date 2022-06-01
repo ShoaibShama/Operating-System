@@ -165,11 +165,6 @@ Multithíeading with threading can give us a signiﬁcant boost heíe. We can ta
 
 ![image](https://user-images.githubusercontent.com/98227015/171369982-7d61514d-d712-4bb6-9e54-29ca103e2f3b.png)
 
-dfdf
-
-
-
-
 
 
 
@@ -193,7 +188,7 @@ That’s all there is to it. Let’s see how big of an impact this tiny change c
 
 1.54 seconds for 40 images! That’s way faster. With so little in code changes, we got a roughly 8x speedup. At a larger scale, we’d likely see even more potential benefit from multithreading.
  
-IMPLEMENTATION
+##                                                          IMPLEMENTATION
 
 This multithreaded web scraper downloads given number of images from the url:
 
@@ -208,18 +203,18 @@ https://www.pokemon.com/us/pokedexWe have empty folders
 
 
 
-SIMPLE WEB SCRAPER (WITHOUT MULTITHREADING):
+### SIMPLE WEB SCRAPER (WITHOUT MULTITHREADING):
 ![image](https://user-images.githubusercontent.com/98227015/171370625-f850074b-85c7-4346-bc04-2e79d3a1b337.png)
 
 ![image](https://user-images.githubusercontent.com/98227015/171370684-fe600223-034a-4d5c-961e-069c212ec4cc.png)
 
-WEB SCRAPER WITH MULTITHREADING:
+### WEB SCRAPER WITH MULTITHREADING:
 
 ![image](https://user-images.githubusercontent.com/98227015/171370712-f0016b90-bbe5-4ea2-a1cc-5b042c575657.png)
 
  ![image](https://user-images.githubusercontent.com/98227015/171370735-1cbb8433-5000-4dd0-a304-8deddab7d836.png)
  
- THE IMAGES ARE STORED IN OUR FOLDERS
+ ### THE IMAGES ARE STORED IN OUR FOLDERS
  
  ![image](https://user-images.githubusercontent.com/98227015/171370784-ee0d6f77-de9e-48eb-9500-5acddae43735.png)
 
@@ -231,7 +226,8 @@ WEB SCRAPER WITH MULTITHREADING:
 
 
  
-APPLICATIONS OF WEB SCRAPING:
+##                                                 APPLICATIONS OF WEB SCRAPING:
+____________________________________________________________________________________________________________________
 ![image](https://user-images.githubusercontent.com/98227015/171370990-9325cafc-a6c4-4037-9fd0-4a8c249b8f28.png)
 
 
