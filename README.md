@@ -36,9 +36,6 @@ OUľPUľ:
 ![image](https://user-images.githubusercontent.com/98227015/171368251-baafd335-1950-4560-9711-0708524a49a3.png)
 
 
-
-
-
 The files (40 in this case) are being downloaded one by one from a website and are saved in a directory on our system.
 The time taken in this case was around 12 seconds. If the program is run for a relatively larger number of images, it will take much longer time.
 This program can be completed in a much shorter time if we introduce multithreading in our code.
@@ -48,6 +45,8 @@ MULTITHREADING
 In computer architecture, multithreading is the ability of a central processing unit (CPU) (or a single core in a multi-core processor) to provide multiple threads of execution concurrently, supported by the operating system. This approach differs from multiprocessing. In a multithreaded application, the threads share the resources of a single or multiple cores, which include the computing units, the CPU caches, and the translation lookaside buffer (TLB).
 Where multiprocessing systems include multiple complete processing units in one or more cores, multithreading aims to increase utilization of a single core by using thread-level parallelism, as well as instruction-level parallelism. As the two techniques are complementary, they are combined in nearly all modern systems architectures with multiple multithreading CPUs and with CPUs with multiple multithreading cores.
 The two main types of threads are user-level threads and kernel-level threads. A diagram that demonstrates these is as follows −
+
+![image](https://user-images.githubusercontent.com/98227015/171368512-ea2f8d0f-ce5d-4283-9e3c-40a884e0c53b.png)
  
 User - Level Threads
 
@@ -94,17 +93,7 @@ Hyper-Threading Technology, while a synthetic program just performing a loop of 
 data prefetches (as a good video encoder might) do not suffer from cache misses or idle computing resources. Such programs therefore do not benefit from hardware multithreading and can indeed see degraded performance due to contention for shared resources.
 From the software standpoint, hardware support for multithreading is more visible to software, requiring more changes to both application programs and operating systems than multiprocessing. Hardware techniques used to support multithreading often parallel the software techniques used for computer multitasking. Thread scheduling is also a major problem in multithreading.
 
-
-
-
-
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/98227015/171368590-d8ec30c4-1593-4c2d-856c-7d49c4922fd6.png)
 
 Multi-Threading Models in Process Management
 
@@ -118,28 +107,22 @@ Many operating systems support kernel thread and user thread in a combined way. 
 In this model, we have multiple user threads multiplexed to the same or lesser number of kernel level threads. Number of kernel level threads are specific to the machine; the advantage of this model is if a user thread is blocked, we can schedule others user
 threads to another kernel thread. Thus, System doesn’t block if a particular thread is blocked.
 
-
-
-
+![image](https://user-images.githubusercontent.com/98227015/171368677-4555c132-6730-4539-82df-265142d10322.png)
 
 -Many to One Model
 
 In this model, we have multiple user threads mapped to one kernel thread. In this model when a user thread makes a blocking system call entire process blocks. As we have only one kernel thread and only one user thread can access the kernel at a time, so multiple threads are not able access the multiprocessor at the same time.
  
- 
-
+ ![image](https://user-images.githubusercontent.com/98227015/171368718-7a24d464-c9ac-441a-8762-926b41ffd6ac.png)
 
 
 -One to One Model
 
 In this model, one to one relationship between kernel and user thread. In this model multiple threads can run on multiple processors. Problem with this model is that creating a user thread requires the corresponding kernel thread.
 
+![image](https://user-images.githubusercontent.com/98227015/171368750-fa6618e2-fe16-4201-945b-e16ef968dc2c.png)
 
-
- 
- 
-
-
+![image](https://user-images.githubusercontent.com/98227015/171368823-91c7a5ce-8c40-4e1c-b5af-67caebca3a71.png)
 
 A Simple Example of Multithreading:
 Let us try to understand the above code:
@@ -151,24 +134,23 @@ target: the function to be executed by thread
 args: the arguments to be passed to the target function
 In above example, we created 2 threads with different target functions:
 
+![image](https://user-images.githubusercontent.com/98227015/171368900-b5402a37-e7fe-415c-a596-de4c03652869.png)
+
+![image](https://user-images.githubusercontent.com/98227015/171368932-2f6e188a-b121-4fbf-ae96-12cfa82c1bbd.png)
 
 
-
-
- 
 
  
 To start a thread, we use start method of Thread class.
-
-.
 Once the threads start, the current program (you can think of it like a main thread) also keeps on executing. In order to stop execution of current program
 until a thread is complete, we use join method.
+
+![image](https://user-images.githubusercontent.com/98227015/171368996-38b818df-0ee8-4952-b201-d15a140afa3b.png)
 
 As a result, the current program will first wait for the completion of t1 and then t2. Once they are finished, the remaining statements of the current program are executed.
 
 OUTPUT:
-
-
+![image](https://user-images.githubusercontent.com/98227015/171369049-52958ad0-fc54-45f3-8855-51809b86533b.png)
  
 MULTITHREADED WEB SCRAPING
 
