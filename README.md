@@ -8,25 +8,23 @@ Web scraping a web page involves fetching it and extracting from it. Fetching is
 Therefore, web crawling is a main component of web scraping, to fetch pages for later processing. Once fetched, then extraction can take place. The content of a page may be parsed, searched, reformatted, its data copied into a spreadsheet or loaded into a database. Web scrapers typically take something out of a page, to make use of it for another purpose somewhere else. An example would be to find and copy names and telephone numbers, or companies and their URLs, or
 e-mail addresses to a list (contact scraping).
 
+![image](https://user-images.githubusercontent.com/98227015/171368015-2363c023-1e11-4b9c-9f46-c6fd9dc6051d.png)
 
 
 
-
- 
 WEB SCRAPER USING PYTHON
+
+![image](https://user-images.githubusercontent.com/98227015/171368104-c97e9395-a4be-40fb-a3a9-7257dc589bd7.png)
 
 Let’s say we wanted to download the images from an online photo gallery. It’s pretty easy to do this.
 
 First, we need to get the URL from which the images are to be downloaded. Since there are a lot of images in a gallery per page, we only need a few pages to demonstrate the power of multithreading. Cv2 and urllib make extracting the URLs easy. Even though we’re only making 40 requests.
 
-
+![image](https://user-images.githubusercontent.com/98227015/171368144-0d6eb75d-93e6-497f-9847-16d3a257b961.png)
  
 LIBRARIES USED:
 
-
-
-
-
+![image](https://user-images.githubusercontent.com/98227015/171368199-5e1522ba-e362-4d38-8d58-3bbeafb61e53.png)
 
 
 ●	OpenCV-Python is a library of Python bindings designed to solve computer vision problems. cv2. imread() method loads an image from the specified file.
@@ -35,16 +33,7 @@ LIBRARIES USED:
 
 OUľPUľ:
 
-
-
-
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/98227015/171368251-baafd335-1950-4560-9711-0708524a49a3.png)
 
 
 
