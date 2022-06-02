@@ -35,7 +35,6 @@ OUľPUľ:
 
 ![image](https://user-images.githubusercontent.com/98227015/171368251-baafd335-1950-4560-9711-0708524a49a3.png)
 
-
 The files (40 in this case) are being downloaded one by one from a website and are saved in a directory on our system.
 The time taken in this case was around 12 seconds. If the program is run for a relatively larger number of images, it will take much longer time.
 This program can be completed in a much shorter time if we introduce multithreading in our code.
